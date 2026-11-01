@@ -1,94 +1,132 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="day">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Scrubmello | One handle. Every head. Every body.</title>
-<meta name="description" content="Scrubmello: interchangeable body, back, face and scalp scrubbers. One handle, click-on heads, made for every body. Launching soon.">
+<meta name="description" content="Scrubmello: interchangeable scrubbers for body, back, face and scalp. Slim soft-touch handles, click-on heads, made for every body. Launching soon.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#f7f1ec">
+<meta name="theme-color" content="#f6f1ec">
 <meta property="og:title" content="Scrubmello | One handle. Every head. Every body.">
 <meta property="og:description" content="Interchangeable scrubbers for body, back, face and scalp. Launching soon.">
+<meta property="og:image" content="img/hero.webp">
+<script>try{var t=localStorage.getItem('sm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=0.1.0">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=0.2.0">
 </head>
 <body>
 <div id="site-header"></div>
 
-<header class="hero"><div class="wrap">
- <div class="hero-txt">
-  <span class="badge"><i>New</i> Launching soon</span>
-  <h1>One handle.<br>Every head.<br><span class="soft">Every body.</span></h1>
-  <p>Scrubmello is a calm, modern range of scrubbers. Click a head onto any handle: body, back, face, scalp or the hard to reach bits. Hang it up and let it dry.</p>
-  <div class="ctas"><a class="btn" href="#build">Build yours</a><a class="btn line" href="#how">How it works</a></div>
+<main>
+<header class="hero">
+ <div class="hero-type">
+  <p class="kicker reveal">Scrubmello <span>/</span> Bath &amp; body tools <span>/</span> Launching soon</p>
+  <h1 class="reveal">Scrub, <em>mellow.</em></h1>
  </div>
- <div class="stage" id="hero-art" aria-hidden="true"></div>
-</div></header>
-
-<div class="usp"><div class="wrap">
- <div><span>⟳</span>One click, any head</div>
- <div><span>◡</span>Suction and screw hooks in every pack</div>
- <div><span>◌</span>Rinses clean, dries fast</div>
- <div><span>♡</span>Made for every body</div>
-</div></div>
-
-<section id="how"><div class="wrap">
- <div class="head"><div><div class="eyebrow">How it works</div><h2>The Mello Click system</h2><p>Every handle and every head share the same click socket, so one handle grows with you and a new head costs less than a new scrubber.</p></div></div>
- <div class="steps">
-  <div class="step"><b>1</b><h3>Pick a handle</h3><p>Short palm grip, long reach for your back, an easy grip for weaker hands, or a mini for kids.</p></div>
-  <div class="step"><b>2</b><h3>Click on a head</h3><p>Push and twist. Swap heads for body, face, scalp, sensitive skin or skin folds.</p></div>
-  <div class="step"><b>3</b><h3>Hang it up</h3><p>Every handle has a hang loop. Stick the suction hook on tile or screw the hook into the wall.</p></div>
+ <figure class="hero-img reveal"><img src="img/hero.webp" alt="The Scrubmello range: Reach Handle, Pebble Grip, Easy Grip and Mini with click-on heads" width="1440" height="1008" fetchpriority="high"></figure>
+ <div class="hero-foot wrap">
+  <p>One handle.<br>Every head.<br>Every body.</p>
+  <p class="muted">Slim soft-touch handles, under an inch wide, with clear frosted details. Click on a head for body, back, face or scalp, then hang it up to dry.</p>
+  <a class="link" href="#system">Discover the system <i>↓</i></a>
  </div>
-</div></section>
+</header>
 
-<section id="build" class="tint"><div class="wrap">
- <div class="head"><div><div class="eyebrow">Build yours</div><h2>Mix and match</h2><p>Try any handle with any head in any colour.</p></div></div>
- <div class="builder" id="builder"></div>
-</div></section>
+<section class="statement wrap">
+ <p class="words" data-words>We think scrubbing should feel calm. Not cheap, not precious. Just well made, easy to keep clean, and designed so one handle can do everything, for everyone in the house.</p>
+</section>
 
-<section id="handles"><div class="wrap">
- <div class="head"><div><div class="eyebrow">Handles</div><h2>Four handles</h2><p>Same smooth, rounded look across the range. All of them hang up.</p></div></div>
- <div class="grid" id="grid-handles"></div>
-</div></section>
-
-<section id="heads" class="tint"><div class="wrap">
- <div class="head"><div><div class="eyebrow">Heads</div><h2>A head for every job</h2><p>One egg shape, many textures. Replace a head when it wears, keep the handle.</p></div></div>
- <div class="grid" id="grid-heads"></div>
-</div></section>
-
-<section id="colours"><div class="wrap">
- <div class="head"><div><div class="eyebrow">Colours</div><h2>Soft colours, your way</h2><p>Mix head and handle colours, or give everyone in the house their own.</p></div></div>
- <div class="swatches" id="swatches"></div>
-</div></section>
-
-<section id="sets" class="tint"><div class="wrap">
- <div class="head"><div><div class="eyebrow">Sets</div><h2>Ready-made sets</h2><p>Every set comes with a suction hook and a screw-in hook.</p></div></div>
- <div class="grid" id="grid-sets"></div>
-</div></section>
-
-<section id="everybody"><div class="wrap two">
- <div><div class="eyebrow">Made for every body</div><h2>Easy care, built in</h2><p>The Easy Grip handle is thick, soft and angled, so it is easier to hold with arthritis or a weaker grip. The Reach Handle gets to your back and feet without stretching, and the slim Crease Head gets gently between skin folds.</p></div>
- <ul class="ticks"><li>Thick, non-slip grip</li><li>Long reach without bending</li><li>Slim, flexible head for skin folds</li><li>Colour-coded heads so nobody mixes them up</li></ul>
-</div></section>
-
-<section id="faq" class="tint"><div class="wrap narrow">
- <div class="head"><div><div class="eyebrow">FAQ</div><h2>Questions</h2></div></div>
- <div class="faq">
-  <div><button type="button">Do all heads fit all handles?</button><p>Yes. Every Scrubmello handle and head uses the same Mello Click socket.</p></div>
-  <div><button type="button">How do I clean it?</button><p>Rinse with warm water and hang it up to dry. Silicone heads can go in the dishwasher top rack and the Mello Cloth can go in the washing machine.</p></div>
-  <div><button type="button">How often should I change the head?</button><p>Silicone heads last a long time. Mesh and cloth heads are best replaced every few months.</p></div>
-  <div><button type="button">When can I buy?</button><p>We are launching soon. Join the list and you will hear first.</p></div>
+<section id="system" class="system wrap">
+ <div class="sys-img"><figure class="sticky"><img src="img/click.webp" alt="A head clicking onto a Pebble Grip handle" loading="lazy" width="1280" height="800"></figure></div>
+ <div class="sys-steps">
+  <p class="label">The Mello Click system</p>
+  <div class="step reveal"><span>01</span><h3>Pick a handle</h3><p>Pebble for the palm, Reach for your back, Easy Grip for weaker hands, Mini for kids. All of them slim, soft and light.</p></div>
+  <div class="step reveal"><span>02</span><h3>Click on a head</h3><p>Push and quarter-turn. The clear collar locks with a soft click. Eight heads, one egg shape, any handle.</p></div>
+  <div class="step reveal"><span>03</span><h3>Hang it up</h3><p>Every handle ends in a clear hang loop. Every pack has a suction hook for tiles and a screw-in hook for walls.</p></div>
+  <div class="step reveal"><span>04</span><h3>Replace the head, keep the handle</h3><p>Heads wear out, handles don't. A new head costs less than a new scrubber and keeps plastic out of the bin.</p></div>
  </div>
-</div></section>
+</section>
 
-<section id="join"><div class="wrap narrow center">
- <div class="eyebrow">Launch list</div><h2>Be first to scrub mellow</h2><p>Leave your email and we will let you know when Scrubmello goes on sale.</p>
- <form id="join-form" class="join"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email address"><button class="btn" type="submit">Join the list</button></form>
-</div></section>
+<section id="handles" class="band">
+ <div class="wrap">
+  <div class="sec-head"><p class="label">01 <span>Handles</span></p><h2>Slim, soft, <em>see-through</em> in places.</h2></div>
+  <div class="cards four" id="grid-handles"></div>
+ </div>
+</section>
+
+<section id="heads">
+ <div class="wrap">
+  <div class="sec-head"><p class="label">02 <span>Heads</span></p><h2>One shape. <em>Eight</em> textures.</h2></div>
+  <div class="cards heads" id="grid-heads"></div>
+ </div>
+</section>
+
+<section id="colours" class="band">
+ <div class="wrap">
+  <div class="sec-head"><p class="label">03 <span>Colours</span></p><h2>Soft colours, <em>mixed</em> your way.</h2></div>
+ </div>
+ <figure class="wide reveal"><img src="img/colours.webp" alt="Pebble Grips in Blush, Sky, Butter, Charcoal, Cloud and Rainbow" loading="lazy" width="1600" height="880"></figure>
+ <div class="wrap"><div class="swatches" id="swatches"></div></div>
+</section>
+
+<section id="care" class="split wrap">
+ <figure class="reveal"><img src="img/set-care.webp" alt="Easy Care Set: Easy Grip with Crease Head, Reach Handle and Cloth Head" loading="lazy" width="800" height="1000"></figure>
+ <div>
+  <p class="label">04 <span>Made for every body</span></p>
+  <h2>Easy care, <em>built in.</em></h2>
+  <p class="muted big">The Easy Grip is thick where it matters and angled so wrists stay straight. Clear rings give a soft, non-slip hold. The Reach Handle gets to backs and feet without stretching, and the slim Crease Head gets gently between skin folds.</p>
+  <ul class="rules"><li><span>Grip</span>Up to 25mm, soft clear rings</li><li><span>Reach</span>400mm, gentle curve</li><li><span>Folds</span>Slim, flexible 38mm head</li><li><span>Hygiene</span>Colour-coded heads per person</li></ul>
+ </div>
+</section>
+
+<section id="sets" class="band">
+ <div class="wrap">
+  <div class="sec-head"><p class="label">05 <span>Sets</span></p><h2>Ready to <em>go.</em></h2></div>
+  <div class="cards four" id="grid-sets"></div>
+ </div>
+</section>
+
+<section id="hooks" class="split wrap rev">
+ <div>
+  <p class="label">06 <span>In every pack</span></p>
+  <h2>Two ways to <em>hang.</em></h2>
+  <p class="muted big">A clear suction hook for tiles and glass, and a screw-in hook for walls that won't hold suction. Use whichever suits your bathroom.</p>
+ </div>
+ <figure class="reveal"><img src="img/hooks.webp" alt="Suction hook and screw-in hook" loading="lazy" width="800" height="1000"></figure>
+</section>
+
+<section id="materials" class="wrap">
+ <div class="sec-head"><p class="label">07 <span>Materials</span></p><h2>What it's <em>made of.</em></h2></div>
+ <ul class="rules wide-rules">
+  <li><span>Handles</span>Soft-touch silicone over a rigid core</li>
+  <li><span>Clear parts</span>Frosted see-through silicone</li>
+  <li><span>Heads</span>Silicone, with mesh and fabric options</li>
+  <li><span>Cleaning</span>Rinse, hang, dry. Silicone heads are top-rack dishwasher safe</li>
+  <li><span>Fit</span>Every head fits every handle</li>
+ </ul>
+</section>
+
+<section id="faq" class="band">
+ <div class="wrap narrow">
+  <div class="sec-head"><p class="label">08 <span>Questions</span></p><h2>Good to <em>know.</em></h2></div>
+  <div class="faq">
+   <details><summary>Do all heads fit all handles?</summary><p>Yes. Every Scrubmello handle and head uses the same Mello Click collar.</p></details>
+   <details><summary>How do I clean it?</summary><p>Rinse with warm water and hang it up to dry. Silicone heads can go on the dishwasher top rack and the Cloth head can go in the washing machine.</p></details>
+   <details><summary>How often should I change the head?</summary><p>Silicone heads last a long time. Mesh and Cloth heads are best replaced every few months.</p></details>
+   <details><summary>When can I buy?</summary><p>We are launching soon. Join the list and you will hear first.</p></details>
+  </div>
+ </div>
+</section>
+
+<section id="join" class="join-sec wrap">
+ <p class="label">Launch list</p>
+ <h2 class="huge">Be first to <em>scrub mellow.</em></h2>
+ <form id="join-form" class="join"><input type="email" name="email" placeholder="Your email" required aria-label="Email address"><button type="submit">Join <i>→</i></button></form>
+</section>
+</main>
 
 <div id="site-footer"></div>
-<script src="data.js?v=0.1.0"></script>
-<script src="app.js?v=0.1.0"></script>
+<script src="data.js?v=0.2.0"></script>
+<script src="app.js?v=0.2.0"></script>
 </body>
 </html>

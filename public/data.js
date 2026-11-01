@@ -1,5 +1,6 @@
 /* Scrubmello product list. Prices are left empty (null) until they are decided.
-   When a price is null the site shows "Price coming soon". */
+   When a price is null the site shows "Price coming soon".
+   Sizes come from the 3D design models. */
 window.SM = {
   site: {
     name: 'Scrubmello',
@@ -10,38 +11,40 @@ window.SM = {
   },
 
   colours: [
-    { id: 'pink',    name: 'Blush Pink',   hex: '#f4b9c8' },
-    { id: 'blue',    name: 'Sky Blue',     hex: '#a9d3ee' },
-    { id: 'black',   name: 'Charcoal',     hex: '#4a4a54' },
-    { id: 'white',   name: 'Cloud White',  hex: '#f4f2ee' },
-    { id: 'yellow',  name: 'Sunny Yellow', hex: '#f7e08c' },
-    { id: 'rainbow', name: 'Rainbow',      hex: 'rainbow' }
+    { id: 'pink',    name: 'Blush',    hex: '#f4b9c8' },
+    { id: 'blue',    name: 'Sky',      hex: '#a9d3ee' },
+    { id: 'yellow',  name: 'Butter',   hex: '#f7e08c' },
+    { id: 'black',   name: 'Charcoal', hex: '#4a4a54' },
+    { id: 'white',   name: 'Cloud',    hex: '#f2f0ec' },
+    { id: 'rainbow', name: 'Rainbow',  hex: 'rainbow' },
+    { id: 'mint',    name: 'Mint',     hex: '#bfe5c7' },
+    { id: 'lilac',   name: 'Lilac',    hex: '#cfc2ef' }
   ],
 
-  /* Handles all share the same Mello Click socket, so any head fits any handle. */
+  /* Handles all share the Mello Click collar, so any head fits any handle. */
   handles: [
-    { id: 'pebble', name: 'Pebble Grip',  desc: 'Short palm grip for everyday body washing. Fits in the hand like a smooth stone.', price: null },
-    { id: 'reach',  name: 'Reach Handle', desc: 'Long, gently curved handle for your back and shoulders. Hang loop at the end.', price: null },
-    { id: 'easy',   name: 'Easy Grip',    desc: 'Thick, soft, angled handle for weaker grip, arthritis or limited reach.', price: null },
-    { id: 'mini',   name: 'Mini',         desc: 'Small, light handle sized for children\'s hands.', price: null }
+    { id: 'pebble', name: 'Pebble Grip',  img: 'img/handle-pebble.webp', spec: '23mm wide · 112mm long', desc: 'Short palm grip for everyday washing, with a clear frosted thumb window and hang tab.', price: null },
+    { id: 'reach',  name: 'Reach Handle', img: 'img/handle-reach.webp',  spec: '14 to 19mm wide · 400mm long', desc: 'Long, gently curved back handle. A clear shaft shows the coloured spine inside.', price: null },
+    { id: 'easy',   name: 'Easy Grip',    img: 'img/handle-easy.webp',   spec: 'Up to 25mm wide · 170mm long', desc: 'Angled grip with soft clear rings, for arthritis, weaker grip or limited reach.', price: null },
+    { id: 'mini',   name: 'Mini',         img: 'img/handle-mini.webp',   spec: '13mm wide · 60mm long', desc: 'Small and light, sized for children\'s hands.', price: null }
   ],
 
-  /* Heads all share the same egg shape so the range looks like one family. */
+  /* Heads all share one egg shape (72 x 88mm) so the range looks like one family. */
   heads: [
-    { id: 'body',     name: 'Body Head',      tex: 'bristle', desc: 'Long silicone bristles that lather well and scrub deep.', price: null },
-    { id: 'soft',     name: 'Soft Head',      tex: 'fine',    desc: 'Very fine, short bristles for sensitive skin.', price: null },
-    { id: 'scalp',    name: 'Scalp Head',     tex: 'nub',     desc: 'Firm rounded nubs for bald heads, scalps and beards.', price: null },
-    { id: 'face',     name: 'Face Head',      tex: 'face',    desc: 'Ultra-fine silicone on one side, a removable cleansing foam pad on the other.', price: null },
-    { id: 'mesh',     name: 'Mesh Head',      tex: 'mesh',    desc: 'Puffy mesh for big lather with less scrub.', price: null },
-    { id: 'cloth',    name: 'Mello Cloth',    tex: 'cloth',   desc: 'A soft fabric head that scrubs gently. The flannel, reinvented. Machine washable.', price: null },
-    { id: 'crease',   name: 'Crease Head',    tex: 'crease',  desc: 'Slim, tapered and flexible for between skin folds and hard to reach places.', price: null },
-    { id: 'intimate', name: 'Intimate Head',  tex: 'fine',    desc: 'Extra soft, colour-coded so it is never mixed up with the others.', price: null }
+    { id: 'body',     name: 'Body',     img: 'img/head-body.webp',     spec: 'Long silicone bristles', desc: 'Lathers well and scrubs deep.', price: null },
+    { id: 'soft',     name: 'Soft',     img: 'img/head-soft.webp',     spec: 'Short, fine bristles', desc: 'Gentle on sensitive skin.', price: null },
+    { id: 'scalp',    name: 'Scalp',    img: 'img/head-scalp.webp',    spec: 'Firm rounded nubs', desc: 'For bald heads, scalps and beards.', price: null },
+    { id: 'face',     name: 'Face',     img: 'img/head-face.webp',     spec: 'Ultra-fine silicone', desc: 'Soft enough for faces, with a cleansing foam pad to swap in.', price: null },
+    { id: 'mesh',     name: 'Mesh',     img: 'img/head-mesh.webp',     spec: 'Layered net pouf', desc: 'Big lather, light scrub.', price: null },
+    { id: 'cloth',    name: 'Cloth',    img: 'img/head-cloth.webp',    spec: 'Waffle-weave fabric', desc: 'The flannel, reinvented. Machine washable.', price: null },
+    { id: 'crease',   name: 'Crease',   img: 'img/head-crease.webp',   spec: 'Slim 38mm flexible paddle', desc: 'Gets gently between skin folds.', price: null },
+    { id: 'intimate', name: 'Intimate', img: 'img/head-intimate.webp', spec: 'Smooth rippled silicone', desc: 'Extra soft and always lilac, so it never gets mixed up.', price: null }
   ],
 
   sets: [
-    { id: 'starter', name: 'Starter Set',  desc: 'Pebble Grip, Body Head, Soft Head, suction hook and screw hook.', price: null },
-    { id: 'back',    name: 'Back Set',     desc: 'Reach Handle, Body Head, Mesh Head, suction hook and screw hook.', price: null },
-    { id: 'family',  name: 'Family Set',   desc: 'Two Pebble Grips, a Reach Handle, a Mini and six heads in mixed colours.', price: null },
-    { id: 'care',    name: 'Easy Care Set', desc: 'Easy Grip, Reach Handle, Crease Head, Soft Head and Mello Cloth.', price: null }
+    { id: 'starter', name: 'Starter Set',   img: 'img/set-starter.webp', desc: 'Pebble Grip, Body and Soft heads, suction hook and screw hook.', price: null },
+    { id: 'back',    name: 'Back Set',      img: 'img/set-back.webp',    desc: 'Reach Handle, Body and Mesh heads, suction hook and screw hook.', price: null },
+    { id: 'family',  name: 'Family Set',    img: 'img/set-family.webp',  desc: 'Two Pebble Grips, a Reach Handle and a Mini, in mixed colours.', price: null },
+    { id: 'care',    name: 'Easy Care Set', img: 'img/set-care.webp',    desc: 'Easy Grip, Reach Handle, Crease, Soft and Cloth heads.', price: null }
   ]
 };
